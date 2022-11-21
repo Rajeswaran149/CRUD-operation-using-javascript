@@ -89,15 +89,13 @@ function validate() {
   isValid = true;
   if (document.getElementById("id").value == "") {
     isValid = false;
-    document.getElementById("fullNameValidationError").classList.remove("hide");
+    document.getElementById("idValidationError").classList.remove("hide");
   } else {
     isValid = true;
     if (
-      !document
-        .getElementById("fullNameValidationError")
-        .classList.contains("hide")
+      !document.getElementById("idValidationError").classList.contains("hide")
     )
-      document.getElementById("fullNameValidationError").classList.add("hide");
+      document.getElementById("idValidationError").classList.add("hide");
   }
   return isValid;
 }
