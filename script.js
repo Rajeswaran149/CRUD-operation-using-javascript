@@ -66,7 +66,7 @@ function onEdit(td) {
   document.getElementById("mobileNumber").value =
     selectedRow.cells[3].innerHTML;
   document.getElementById("address").value = selectedRow.cells[4].innerHTML;
-  document.getElementById("department").value = selectedRow.cells[4].innerHTML;
+  document.getElementById("department").value = selectedRow.cells[5].innerHTML;
 }
 
 function updateRecord(formData) {
